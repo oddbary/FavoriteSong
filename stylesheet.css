@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+li {
+    list-style: none;
+}
+
+a  {
+    text-decoration: none;
+    font-size: 50px;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 400px;
+}
+
+.container {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* トップページ以外ではヘッダーを置くので後々のためにコメントアウトで残しておく
+header {
+    background: white;
+    height: 70px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    font-size: 25px;
+    color: #4689FF;
+    padding: 5px 10px;
+    border-bottom: 2px solid #EEEEEE;
+} */
+
+
+.hiphop-wrapper {
+    background-color: #262C3A;
+    width: 100%;
+    padding: 70px 0;
+    color: #BDB7A0;
+}
+
+.hiphop {
+    display: inline-block;
+    padding-bottom: 100px;
+}
+
+.hiphop-music {
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    right: 0%;
+    top: 100px;
+}
+
+.hiphop-list {
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.btn-hiphop{
+    background: #BDB7A0;
+    color: #262C3A;
+    border-radius: 10px;
+    padding: 0px 0px 8px 5px;
+    transition: all 0.15s ease;
+}
+
+.btn-hiphop span{
+    display: inline-block;
+    transition: all .15s ease;
+    margin: 10px 0 3px 0;
+}
+
+.btn-hiphop:hover span,
+.btn-hiphop:active span{
+    transition: all .15s ease;
+    padding-left: 10px;
+}
+
+/*hiphop-wrapperからfooterにかけて、青のグラデーションを作っていく*/
+
+.jpop-wrapper {
+    background-color: #303745;
+    width: 100%;
+    padding-top: 70px;
+    color: #BDB7A0;
+    height: 700px;
+}
+
+.jpop-music {
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    left: 0%;
+    top: 100px;
+}
+
+.jpop {
+    display: inline-block;
+    padding-bottom: 100px;
+    position: absolute;
+    top: 0%;
+    left: 55%;
+}
+
+.jpop-list {
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.btn-jpop {
+    position: relative;
+    background: #BDB7A0;
+    color: #303745;
+    padding: 8px 0px 8px 3px;
+    z-index: 2;
+}
+
+.btn-jpop p{
+    display: inline-block;
+    transition: all 0.4s ease;
+}
+.btn-jpop:hover p,
+.btn-jpop:active p{
+  color: #BDB7A0;
+}
+
+.btn-jpop::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: #303745;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.btn-jpop:hover::before,
+.btn-jpop:active::before {
+    border:2px solid #BDB7A0;
+    width: 100%;
+}
+
+.btn-jpop::after {
+    content: ' ';
+    background-color: #BDB7A0;
+    width: 300px;
+    height: 3px;
+    display: block;
+    position: absolute;
+    left: 50px;
+    bottom: 13px;
+}
