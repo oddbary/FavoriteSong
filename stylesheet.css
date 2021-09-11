@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+*::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -50,7 +54,7 @@ header {
     border-bottom: 2px solid #EEEEEE;
 } */
 
-/*--------------------------------------------------------ここからhiphop-wrapper--------------------------------------------------------*/
+/*--------------------------------------------ここからhiphop-wrapper--------------------------------------------*/
 /*hiphop-wrapperからfooterにかけて、青のグラデーションを作っていく*/
 
 .hiphop-wrapper {
@@ -61,7 +65,6 @@ header {
 }
 
 .hiphop {
-    display: inline-block;
     padding-bottom: 100px;
 }
 
@@ -78,7 +81,7 @@ header {
     padding-left: 100px;
 }
 
-.btn-hiphop{
+.btn-hiphop　{
     background: #BDB7A0;
     color: #262C3A;
     border-radius: 10px;
@@ -86,19 +89,19 @@ header {
     transition: all 0.15s ease;
 }
 
-.btn-hiphop span{
+.hiphop-name　{
     display: inline-block;
     transition: all .15s ease;
     margin: 10px 0 3px 0;
 }
 
-.btn-hiphop:hover span,
-.btn-hiphop:active span{
+.btn-hiphop:hover .hiphop-name,
+.btn-hiphop:active .hiphop-name　{
     transition: all .15s ease;
     padding-left: 10px;
 }
 
-/*--------------------------------------------------------ここからjpop-wrapper--------------------------------------------------------*/
+/*--------------------------------------------ここからjpop-wrapper--------------------------------------------*/
 
 .jpop-wrapper {
     background-color: #303745;
@@ -117,7 +120,6 @@ header {
 }
 
 .jpop {
-    display: inline-block;
     padding-bottom: 100px;
     position: absolute;
     top: 0%;
@@ -135,14 +137,23 @@ header {
     color: #303745;
     padding: 8px 0px 8px 3px;
     z-index: 2;
+    display: flex;
+    align-items: center;
+    line-height: 1.5em;
+    border: 1px solid #BDB7A0;
 }
 
-.btn-jpop p{
+.crossbar {
+    border-top: 2px solid;
+    width: 1.5em;
+}
+
+.jpop-name　{
     display: inline-block;
     transition: all 0.4s ease;
 }
-.btn-jpop:hover p,
-.btn-jpop:active p{
+.btn-jpop:hover .jpop-name,
+.btn-jpop:active .jpop-name　{
   color: #BDB7A0;
 }
 
@@ -156,26 +167,27 @@ header {
     left: 0;
     transition: all 0.3s ease;
     z-index: -1;
+    border: 1px solid #BDB7A0;
 }
 
 .btn-jpop:hover::before,
 .btn-jpop:active::before {
-    border:2px solid #BDB7A0;
+    border:1px solid #BDB7A0;
     width: 100%;
 }
 
 .btn-jpop::after {
     content: ' ';
     background-color: #BDB7A0;
-    width: 300px;
-    height: 3px;
+    width: 5em;
+    height: .07em;
     display: block;
     position: absolute;
-    left: 50px;
-    bottom: 13px;
+    left: 1.5em;
+    bottom: .2em;
 }
 
-/*--------------------------------------------------------ここからvocaloid-wrapper--------------------------------------------------------*/
+/*--------------------------------------------ここからvocaloid-wrapper--------------------------------------------*/
 
 .vocaloid-wrapper {
     background-color: #3F4856;
@@ -185,7 +197,6 @@ header {
 }
 
 .vocaloid {
-    display: inline-block;
     padding-bottom: 100px;
 }
 
@@ -200,18 +211,16 @@ header {
     -webkit-perspective: 300px;
     -moz-perspective: 300px;
     perspective: 300px;
-    line-height: 100%;
-    height: 84px;
+    line-height: 1.2;
 }
 
-.btn-vocaloid p {
+.vocaloid-name {
     display: block;
     background-color: #BDB7A0;
     color: #3F4856;
-    position: absolute;
     height: 100%;
     width: 100%;
-    padding: 15px 0;
+    padding: 10px 0;
     border: 2px solid #BDB7A0;
     transition: all .3s;
     -webkit-transform: rotateX(0deg);
@@ -221,20 +230,21 @@ header {
     -moz-transform-origin: 50% 50% -40px;
     transform-origin: 50% 50% -40px;
 }
-.btn-vocaloid:hover p, .btn-vocaloid:active p {
+
+.btn-vocaloid:hover .vocaloid-name, .btn-vocaloid:active .vocaloid-name {
     -webkit-transform: rotateX(-90deg);
     -moz-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
 }
 
-.btn-vocaloid span {
+.vocaloid-hover-name {
     display: block;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    padding: 15px 0;
+    padding: 10px 0;
     border: 2px solid #BDB7A0;
     transition: all .3s;
     background-color: #3F4856;
@@ -248,7 +258,7 @@ header {
     z-index: -1;
 }
 
-.btn-vocaloid:hover span, .btn-vocaloid:active span {
+.btn-vocaloid:hover .vocaloid-hover-name, .btn-vocaloid:active .vocaloid-hover-name {
     display: block;
     -webkit-transform: rotateX(0deg);
     -moz-transform: rotateX(0deg);
