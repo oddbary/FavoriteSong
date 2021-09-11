@@ -81,7 +81,7 @@ header {
     padding-left: 100px;
 }
 
-.btn-hiphop　{
+.btn-hiphop {
     background: #BDB7A0;
     color: #262C3A;
     border-radius: 10px;
@@ -89,14 +89,14 @@ header {
     transition: all 0.15s ease;
 }
 
-.hiphop-name　{
+.hiphop-name {
     display: inline-block;
     transition: all .15s ease;
     margin: 10px 0 3px 0;
 }
 
 .btn-hiphop:hover .hiphop-name,
-.btn-hiphop:active .hiphop-name　{
+.btn-hiphop:active .hiphop-name {
     transition: all .15s ease;
     padding-left: 10px;
 }
@@ -148,12 +148,12 @@ header {
     width: 1.5em;
 }
 
-.jpop-name　{
+.jpop-name {
     display: inline-block;
     transition: all 0.4s ease;
 }
 .btn-jpop:hover .jpop-name,
-.btn-jpop:active .jpop-name　{
+.btn-jpop:active .jpop-name {
   color: #BDB7A0;
 }
 
@@ -231,7 +231,8 @@ header {
     transform-origin: 50% 50% -40px;
 }
 
-.btn-vocaloid:hover .vocaloid-name, .btn-vocaloid:active .vocaloid-name {
+.btn-vocaloid:hover .vocaloid-name,
+.btn-vocaloid:active .vocaloid-name {
     -webkit-transform: rotateX(-90deg);
     -moz-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
@@ -258,7 +259,8 @@ header {
     z-index: -1;
 }
 
-.btn-vocaloid:hover .vocaloid-hover-name, .btn-vocaloid:active .vocaloid-hover-name {
+.btn-vocaloid:hover .vocaloid-hover-name,
+.btn-vocaloid:active .vocaloid-hover-name {
     display: block;
     -webkit-transform: rotateX(0deg);
     -moz-transform: rotateX(0deg);
