@@ -1,2 +1,2 @@
 # FavoriteSong
-https://oddbary.github.io/FavoriteSong/
+https://oddbary.github.io/favoritesong/
