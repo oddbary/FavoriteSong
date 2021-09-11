@@ -50,6 +50,8 @@ header {
     border-bottom: 2px solid #EEEEEE;
 } */
 
+/*--------------------------------------------------------ここからhiphop-wrapper--------------------------------------------------------*/
+/*hiphop-wrapperからfooterにかけて、青のグラデーションを作っていく*/
 
 .hiphop-wrapper {
     background-color: #262C3A;
@@ -96,7 +98,7 @@ header {
     padding-left: 10px;
 }
 
-/*hiphop-wrapperからfooterにかけて、青のグラデーションを作っていく*/
+/*--------------------------------------------------------ここからjpop-wrapper--------------------------------------------------------*/
 
 .jpop-wrapper {
     background-color: #303745;
@@ -171,4 +173,85 @@ header {
     position: absolute;
     left: 50px;
     bottom: 13px;
+}
+
+/*--------------------------------------------------------ここからvocaloid-wrapper--------------------------------------------------------*/
+
+.vocaloid-wrapper {
+    background-color: #3F4856;
+    width: 100%;
+    padding: 70px 0;
+    color: #BDB7A0;
+}
+
+.vocaloid {
+    display: inline-block;
+    padding-bottom: 100px;
+}
+
+.vocaloid-list {
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.btn-vocaloid {
+    text-align: center;
+    position: relative;
+    -webkit-perspective: 300px;
+    -moz-perspective: 300px;
+    perspective: 300px;
+    line-height: 100%;
+    height: 84px;
+}
+
+.btn-vocaloid p {
+    display: block;
+    background-color: #BDB7A0;
+    color: #3F4856;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 15px 0;
+    border: 2px solid #BDB7A0;
+    transition: all .3s;
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -40px;
+    -moz-transform-origin: 50% 50% -40px;
+    transform-origin: 50% 50% -40px;
+}
+.btn-vocaloid:hover p, .btn-vocaloid:active p {
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+.btn-vocaloid span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 0;
+    border: 2px solid #BDB7A0;
+    transition: all .3s;
+    background-color: #3F4856;
+    color: #BDB7A0;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -40px;
+    -moz-transform-origin: 50% 50% -40px;
+    transform-origin: 50% 50% -40px;
+    z-index: -1;
+}
+
+.btn-vocaloid:hover span, .btn-vocaloid:active span {
+    display: block;
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    z-index: 1;
 }
