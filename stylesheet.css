@@ -89,14 +89,14 @@ header {
     transition: all 0.15s ease;
 }
 
-.hiphop-name{
+.hiphop-name {
     display: inline-block;
     transition: all .15s ease;
     margin: 10px 0 3px 0;
 }
 
 .btn-hiphop:hover .hiphop-name,
-.btn-hiphop:active .hiphop-name{
+.btn-hiphop:active .hiphop-name {
     transition: all .15s ease;
     padding-left: 10px;
 }
