@@ -1,0 +1,99 @@
+@media all and (max-width: 1024px) {
+    
+    .container {
+        padding: 0 10%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+/*--------------------------------------------ここからheader--------------------------------------------*/
+
+    .header-right {
+        display: none;
+    }
+
+    .btn-header {
+        display: block;
+    }
+
+    .responsive-menu {
+        display: flex;
+    }
+
+/*--------------------------------------------ここからmain--------------------------------------------*/
+
+    .top-wrapper {
+        padding-left: 0;
+        background-position: center;
+    }
+
+    .top-text {
+        font-size: 8rem;
+        opacity: 0.9;
+    }
+
+    .hiphop,
+    .jpop,
+    .vocaloid {
+        padding-bottom: 0;
+    }
+
+    .hiphop-list,
+    .jpop-list,
+    .vocaloid-list {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hiphop-item,
+    .jpop-item,
+    .vocaloid-item {
+        margin: 0 auto;
+    }
+
+    .hiphop,.hiphop-music,
+    .jpop,.jpop-music,
+    .vocaloid,.vocaloid-music {
+        width: 100%;
+    }
+
+
+    .hiphop-music,
+    .jpop-music,
+    .vocaloid-music {
+        padding-top: 56.25%;
+        margin-top: 50px;
+    }
+
+/*--------------------------------------------ここからfooter--------------------------------------------*/
+
+    .footer-menu {
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+    }
+
+    .footer-hiphop,
+    .footer-jpop,
+    .footer-vocaloid {
+        width: 100%;
+        border: none;
+        margin-bottom: 50px;
+    }
+
+    .footer-title {
+        border-bottom: 2px solid;
+    }
+    
+    .footer-list {
+        margin-top: 0;
+    }
+
+}
+
+@media all and (max-width: 540px) {
+
+}
