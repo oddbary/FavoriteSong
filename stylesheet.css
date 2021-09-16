@@ -139,7 +139,7 @@ header {
 .header-hiphop:hover::after,
 .header-jpop:hover::after,
 .header-vocaloid:hover::after {
-    bottom: 2px;
+    bottom: 0;
     opacity: 1;
     visibility: visible;
 }
