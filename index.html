@@ -5,39 +5,120 @@
         <title>Favorite_song</title>
         <link rel="stylesheet" href="stylesheet.css">
         <meta name="viewport" content="width=device-width" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!--以下３行フォント指定-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap">
     </head>
     <body>
-        <!--　トップページ以外ではヘッダーを置くので後々のためにコメントアウトで残しておく
-        <header>
-            <div class="container">
+        <header id="header">
+            <div class="header-wrapper">
                 <div class="header-left">
-                    <h2>Favorite_song</h2>
+                    <h3 class="page-title">Favorite_song</h3>
                 </div>
-            </div>
+                <nav class="header-right">
+                        <div class="header-menu">
+                            <div class="header-item">
+                                <div class="header-hiphop">HIPHOP</div>
+                                <ul class="header-hiphop-list">
+                                    <li class="header-hiphop-item">
+                                        <a href="#" class="header-hiphop-name">BASI</a>
+                                    </li>
+                                    <li class="header-hiphop-item">
+                                        <a href="#" class="header-hiphop-name">PUNPEE</a>
+                                    </li>
+                                    <li class="header-hiphop-item">
+                                        <a href="#" class="header-hiphop-name">Creepy Nuts</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-item">
+                                <div class="header-jpop">J-POP</div>
+                                <ul class="header-jpop-list">
+                                    <li class="header-jpop-item">
+                                        <a href="#" class="header-jpop-name">椎名林檎</a>
+                                    </li>
+                                    <li class="header-jpop-item">
+                                        <a href="#" class="header-jpop-name">星野源</a>
+                                    </li>
+                                    <li class="header-jpop-item">
+                                        <a href="#" class="header-jpop-name">King Gnu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header-item">
+                                <div class="header-vocaloid">VOCALOID</div>
+                                <ul class="header-vocaloid-list">
+                                    <li class="header-vocaloid-item">
+                                        <a href="#" class="header-vocaloid-name">ハチ</a>
+                                    </li>
+                                    <li class="header-vocaloid-item">
+                                        <a href="#" class="header-vocaloid-name">DECO*27</a>
+                                    </li>
+                                    <li class="header-vocaloid-item">
+                                        <a href="#" class="header-vocaloid-name">Kanaria</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="header-responsive">
+                        <button type="button" class="btn-header">
+                            <span class="btn-line"></span>
+                        </button>
+                        <div class="responsive-menu">
+                            <div class="responsive-item">
+                                <div class="responsive-hiphop">
+                                    <h3>HIPHOP</h3>
+                                </div>
+                                <ul class="responsive-hiphop-list">
+                                    <li>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="responsive-item">
+                                <div class="responsive-jpop">
+                                    <h3>J-POP</h3>
+                                </div>
+                            </div>
+                            <div class="responsive-item">
+                                <div class="responsive-vocaloid">
+                                    <h3>VOCALOID</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
         </header>
-        -->
+        
         <main>
+            <div class="top-wrapper">
+                <h1 class="top-text">
+                    My first website.
+                    <br>
+                    <br>
+                    My best music.
+                </h1>
+            </div>
             <div class="hiphop-wrapper">
                 <div class="container">
                     <div class="hiphop">
                         <h1>HIPHOP</h1>
                         <ul class="hiphop-list">
-                            <li>
+                            <li class="hiphop-item">
                                 <a href="#" class="btn-hiphop">
                                     ><span class="hiphop-name">BASI</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="hiphop-item">
                                 <a href="#" class="btn-hiphop">
                                     ><span class="hiphop-name">PUNPEE</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="hiphop-item">
                                 <a href="#" class="btn-hiphop">
                                     ><span class="hiphop-name">Creepy Nuts</span>
                                 </a>
@@ -50,23 +131,23 @@
                 </div>
             </div>
             <div class="jpop-wrapper">
-                <div class="container">
+                <div class="reverse container">
                     <div class="jpop">
                         <h1>J-POP</h1>
                         <ul class="jpop-list">
-                            <li>
+                            <li class="jpop-item">
                                 <a href="#" class="btn-jpop">
                                     <span class="crossbar"></span>
                                     <span class="jpop-name">椎名林檎</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="jpop-item">
                                 <a href="#" class="btn-jpop">
                                     <span class="crossbar"></span>
                                     <span class="jpop-name">星野源</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="jpop-item">
                                 <a href="#" class="btn-jpop">
                                     <span class="crossbar"></span>
                                     <span class="jpop-name">King Gnu</span>
@@ -84,19 +165,19 @@
                     <div class="vocaloid">
                         <h1>VOCALOID</h1>
                         <ul class="vocaloid-list">
-                            <li>
+                            <li class="vocaloid-item">
                                 <a href="#" class="btn-vocaloid">
                                     <span class="vocaloid-name">ハチ</span>
                                     <span class="vocaloid-hover-name">ハチ</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="vocaloid-item">
                                 <a href="#" class="btn-vocaloid">
                                     <span class="vocaloid-name">DECO*27</span>
                                     <span class="vocaloid-hover-name">DECO*27</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="vocaloid-item">
                                 <a href="#" class="btn-vocaloid">
                                     <span class="vocaloid-name">Kanaria</span>
                                     <span class="vocaloid-hover-name">Kanaria</span>
@@ -111,11 +192,104 @@
             </div>
             
         </main>
-        <footer>
-
+        
+        <footer class="footer-wrapper">
+            <div class="container">
+                <div class="footer">
+                    <div class="footer-menu">
+                        <ul class="footer-hiphop">
+                            <li class="footer-title">
+                                <h2>HIPHOP</h2>
+                            </li>
+                            <li class="footer-item">
+                               <a href="#" class="btn-footer">
+                                    <span class="footer-name">BASI</span>
+                               </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="btn-footer">
+                                     <span class="footer-name">PUNPEE</span>
+                                </a>
+                             </li>
+                             <li class="footer-item">
+                                <a href="#" class="btn-footer">
+                                     <span class="footer-name">Creepy Nuts</span>
+                                </a>
+                             </li>
+                        </ul>
+                        <ul class="footer-jpop">
+                            <li class="footer-title">
+                                <h2>J-POP</h2>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="btn-footer">
+                                    <span class="footer-name">椎名林檎</span>
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="btn-footer">
+                                    <span class="footer-name">星野源</span>
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="btn-footer">
+                                    <span class="footer-name">King Gnu</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-vocaloid">
+                            <li class="footer-title">
+                                <h2>VOCALOID</h2>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="btn-footer">
+                                    <span class="footer-name">ハチ</span>
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="btn-footer">
+                                    <span class="footer-name">DECO*27</span>
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="#" class="btn-footer">
+                                    <span class="footer-name">Kanaria</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#" class="icon btn-facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon btn-twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon btn-instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon btn-iTunes">
+                                <i class="fab fa-itunes"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon btn-spotify">
+                                <i class="fab fa-spotify"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </footer>
-        <!--
+        
         <script type="text/javascript" src="favorite.js"></script>
-        -->
+        <script src="jquery.js"></script>
     </body>
 </html>
