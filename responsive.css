@@ -81,14 +81,48 @@
     .footer-vocaloid {
         width: 100%;
         border: none;
-        margin-bottom: 50px;
+        margin-bottom: 0 5%;
     }
 
     .footer-title {
-        border-bottom: 2px solid;
+        border: 2px solid;
+        cursor: pointer;
+    }
+    
+    .footer-title.active {
+        background-color: #545F6E;
+        color: #BDB7A0;
+        border: none;
     }
     
     .footer-list {
+        line-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition-duration: .2s;
+        height: 0;
+    }
+    
+    .footer-list.open {
+        line-height: 1.5;
+        height: 210px;
+        opacity: 1;
+    }
+    
+    .footer-item {
+        height : 33.33333% ;
+        height : -webkit-calc(100% / 3) ;
+        height : calc(100% / 3) ;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .btn-footer {
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer-icon-list {
         margin-top: 0;
     }
 
