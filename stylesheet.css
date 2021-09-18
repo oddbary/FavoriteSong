@@ -80,8 +80,10 @@ header {
     width: 50%;
 }
 
-.page-title {
-    pointer-events: none;
+.top-page {
+    font-size: 3rem;
+    color: #545F6E;
+    font-weight: bold;
 }
 
 .header-menu {
@@ -194,6 +196,11 @@ header {
 
 
 /*ここからレスポンシブ用*/
+
+.header-responsive {
+    display: flex;
+    align-items: center;
+}
 
 .btn-header { 
     -webkit-appearance: none;
