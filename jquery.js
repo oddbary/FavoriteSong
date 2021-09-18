@@ -17,8 +17,8 @@ $(function(){
 
 //レスポンシブメニューの高さ調整
 
-    var height=$("#header").height();
-    $(".responsive-menu").css("top", height + 24);
+//    var height=$("#header").height();
+//    $(".responsive-menu").css("top", height + 24);
 
 
 //ハンバーガー開閉時の処理
