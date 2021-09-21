@@ -339,7 +339,7 @@ header {
 /*--------------------------------------------ここからtop-wrapper--------------------------------------------*/
 
 .top-wrapper {
-    background-image: url(modern.jpeg);
+    background-image: url(photo/modern.jpeg);
     background-size: cover;
     width: 100%;
     padding: 200px 0 450px 50px;
