@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded",() => {
 
     document.getElementById("container") != null
     
-    var right = window.getComputedStyle( $('#'+container)[4], "");
+    var right = window.getComputedStyle(container);
 
     console.log(right.display)
     
