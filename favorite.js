@@ -23,3 +23,10 @@ document.addEventListener("DOMContentLoaded",() => {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded",() => {
+    const container = document.querySelectorAll(".container");
+   
+    const right = window.getComputedStyle(container,'').getPropertyValue("margin-right");
+    console.log(right);
+});
