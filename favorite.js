@@ -24,9 +24,11 @@ document.addEventListener("DOMContentLoaded",() => {
     }
 });
 
-document.addEventListener("DOMContentLoaded",() => {
-    const container = document.querySelectorAll(".container");
-   
-    const right = window.getComputedStyle(container,'').getPropertyValue("margin-right");
-    console.log(right);
-});
+//document.addEventListener("DOMContentLoaded",() => {
+    var container = document.getElementById("#container");
+    
+    var right = window.getComputedStyle(container);
+
+    console.log(right.display)
+    
+    console.log(right.getPropertyValue("margin-right"));
