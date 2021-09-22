@@ -25,10 +25,14 @@ document.addEventListener("DOMContentLoaded",() => {
 });
 
 //document.addEventListener("DOMContentLoaded",() => {
-    var container = document.getElementById("#container");
+    var container = document.getElementById("container");
+
+    document.getElementById("container") != null
     
-    var right = window.getComputedStyle(container);
+    var right = window.getComputedStyle( $('#'+container)[4], "");
 
     console.log(right.display)
     
     console.log(right.getPropertyValue("margin-right"));
+    
+
