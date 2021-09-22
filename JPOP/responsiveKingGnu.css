@@ -1,0 +1,167 @@
+@media all and (max-width: 1024px) {
+    
+    .container {
+        padding: 0 10%;
+    }
+
+    h1,h2 {
+        text-align: center;
+    }
+
+/*--------------------------------------------ここからheader--------------------------------------------*/
+
+    .header-right {
+        display: none;
+    }
+
+    .btn-header {
+        display: block;
+    }
+
+    .responsive-menu {
+        display: flex;
+    } 
+
+/*--------------------------------------------ここからmain--------------------------------------------*/
+
+.top-text {
+    font-size: 10rem;
+}
+
+.music-1,
+.music-2 {
+    flex-direction: column-reverse;
+}
+
+.KingGnu-music {
+    width: 100%;
+    padding-top: 56.5%;
+    margin-top: 50px;
+}
+
+.music-title {
+    width: 100%;
+}
+
+/*--------------------------------------------ここからfooter--------------------------------------------*/
+
+    .footer-menu {
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+    }
+
+    .footer-hiphop,
+    .footer-jpop,
+    .footer-vocaloid {
+        width: 100%;
+        border: none;
+        padding: 0 5%;
+    }
+
+    .footer-title {
+        border: 2px solid;
+        cursor: pointer;
+    }
+
+    .footer-title.active {
+        background-color: #545F6E;
+        color: #BDB7A0;
+        border: none;
+    }
+
+    .footer-list {
+        line-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition-duration: .2s;
+        height: 0;
+    }
+
+    .footer-list.open {
+        line-height: 1.5;
+        height: 210px;
+        opacity: 1;
+    }
+
+    .footer-item {
+        height : 33.33333% ;
+        height : -webkit-calc(100% / 3) ;
+        height : calc(100% / 3) ;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-footer {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-name {
+        font-size: 4rem;
+    }
+
+    .footer-icon-list {
+        margin-top: 0;
+    }
+
+}
+
+@media all and (max-width: 540px) {
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    a {
+        font-size: 4rem;
+    }
+
+    .responsive-menu {
+        width: 50%;
+        right: -50%;
+    }
+
+    .footer-hiphop,
+    .footer-jpop,
+    .footer-vocaloid {
+        padding: 0;
+    }
+
+    .footer-name {
+        font-size: 3rem;
+    }
+
+    .footer-icon-list {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .footer-icon-list::before,
+    .footer-icon-list::after {
+        content: none;
+    }
+
+    .footer-icon-list li {
+        margin: 0;
+        width: 20%;
+    }
+
+    .icon {
+        width: auto;
+    }
+
+    .top-wrapper {
+        background-position: center;
+        padding: 200px 0 50px 0;
+    }
+
+    .top-text {
+        font-size: 9rem;
+    }
+
+}

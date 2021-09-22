@@ -1,0 +1,477 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;  /*フォントサイズ10px*/
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.4em;  /*フォントサイズ14px*/
+}
+
+h1 {
+    font-size: 10rem;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+li {
+    list-style: none;
+}
+
+a  {
+    text-decoration: none;
+    font-size: 5rem;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*--------------------------------------------ここからheader-wrapper--------------------------------------------*/
+
+header {
+    background: #BDB7A0;
+    width: 100%;
+    position: fixed;
+    z-index:999;
+    color: #545F6E;
+    border-bottom: 2px solid #545F6E;
+    padding: 15px;
+    padding-right: 0;
+    height: 70px;
+}
+
+.header-wrapper {
+    display: flex;
+}
+
+.header-left,
+.header-right {
+    flex: auto;
+    width: 50%;
+}
+
+.top-page {
+    font-size: 3rem;
+    color: #545F6E;
+    font-weight: bold;
+}
+
+.header-menu {
+    display: flex;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+}
+
+.header-item {
+    flex: auto;
+    width : 33.33333% ; 
+    width : -webkit-calc(100% / 3) ;
+    width : calc(100% / 3) ;
+    text-align: center;
+    border-left: 2px solid;
+}
+
+.header-item:first-child {
+    border: none;
+}
+
+.header-hiphop,
+.header-jpop,
+.header-vocaloid {
+    font-size: 2.5rem;
+    height: 100%;
+    color: #545F6E;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.header-hiphop::after,
+.header-jpop::after,
+.header-vocaloid::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #262C3A;
+    bottom: 10px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.header-hiphop:hover,
+.header-jpop:hover,
+.header-vocaloid:hover {
+    color: #262C3A;
+}
+
+.header-hiphop:hover::after,
+.header-jpop:hover::after,
+.header-vocaloid:hover::after {
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.header-hiphop-list,
+.header-jpop-list,
+.header-vocaloid-list {
+    position: fixed;
+    background-color: #BDB7A0;
+    border: 2px solid;
+    border-top: none;
+    top: 69px;
+    flex-direction: column;
+    width: calc(100% / 6);
+    height: 180px;
+    display: none;
+}
+
+.header-hiphop-item,
+.header-jpop-item,
+.header-vocaloid-item {
+    height: calc(100% / 3);
+    width: 100%;
+    border-top: 2px solid;
+}
+
+.header-hiphop-item:first-child,
+.header-jpop-item:first-child,
+.header-vocaloid-item:first-child {
+    border: none;
+}
+
+.header-hiphop-name,
+.header-jpop-name,
+.header-vocaloid-name {
+    font-size: 3rem;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #545F6E;
+}
+
+.header-hiphop-name:hover,
+.header-jpop-name:hover,
+.header-vocaloid-name:hover {
+    color: #262C3A;
+}
+
+
+
+/*ここからレスポンシブ用*/
+
+.header-responsive {
+    display: flex;
+    align-items: center;
+}
+
+.btn-header { 
+    -webkit-appearance: none;
+    appearance: none;
+    vertical-align: middle;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-radius: 0;
+    width: 3rem;
+    height: 3rem;
+    margin-right: 15px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+}
+
+.btn-line {
+    width: 100%;
+    height: 4px;
+    background-color: #545F6E;
+    display: block;
+    position: relative;
+    transition: .2s;
+}
+
+.btn-line::before, .btn-line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #545F6E;
+    transition: .5s;
+}
+
+.btn-line::before {
+    transform: translateY(-11px);
+}
+
+.btn-line::after {
+    transform: translateY(11px);
+}
+
+.btn-line.open {
+    background-color: transparent;
+}
+
+.btn-line.open::before,
+.btn-line.open::after {
+    content: "";
+    background-color: #545F6E;
+    transition: .2s;
+}
+
+.btn-line.open::before {
+    transform: rotate(45deg);
+}
+
+.btn-line.open::after {
+    transform: rotate(-45deg);
+}
+
+.responsive-menu {
+    position: fixed;
+    right: -30%;
+    width: 30%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    color: #545F6E;
+    background-color: #BDB7A0;
+    transition: .3s;
+    display: none;
+    border-left: 2px solid;
+    line-height: 2;
+    top: 70px;
+}
+
+.responsive-item {
+    width: 100%;
+    height: 100%;
+}
+
+.responsive-title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid;
+    color: #545F6E;
+    background-color: #BDB7A0;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.responsive-title:last-child {
+    border: none;
+}
+
+.responsive-title.active {
+    background-color: #545F6E;
+    color: #BDB7A0;
+}
+
+.responsive-menu.open {
+    right: 0;
+}
+
+.responsive-list {
+    line-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition-duration: .2s;
+}
+
+.responsive-list.open {
+    border-bottom: 2px solid #545F6E;
+    line-height: 2;
+    height: auto;
+    opacity: 1;
+}
+
+.responsive-name {
+    font-size: 3rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: #545F6E;
+}
+
+/*--------------------------------------------ここからtop-wrapper--------------------------------------------*/
+
+.top-wrapper {
+    background-image: url(../photo/ringo.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 200px 0 200px 100px;
+}
+
+.top-text {
+    color: #fff;
+    pointer-events: none;
+    font-size: 14rem;
+    writing-mode: vertical-rl;
+}
+
+/*--------------------------------------------ここからmain-wrapper--------------------------------------------*/
+
+.main-wrapper {
+    background-color: #303745;
+    width: 100%;
+    padding: 70px 0;
+    color: #BDB7A0;
+}
+
+.ringo {
+    flex: auto;
+}
+
+.about-text {
+    font-size: 2rem;
+    padding-top: 50px;
+}
+
+.quote-text {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*--------------------------------------------ここからmusic-wrapper--------------------------------------------*/
+
+.music-wrapper {
+    background-color: #303745;
+    padding: 100px 0;
+    color: #BDB7A0;
+}
+
+.music-1 {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.ringo-music {
+    width: 50%;
+    padding-top: 28.25%;
+    position: relative;
+    height: 0;
+}
+
+.music-title {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*--------------------------------------------ここからfooter-wrapper--------------------------------------------*/
+
+.footer-wrapper {
+    background-color: #BDB7A0;
+    width: 100%;
+    padding: 70px 0;
+    color: #545F6E;
+}
+
+.footer {
+    flex: auto;
+}
+
+.footer-menu {
+    display: flex;
+}
+
+.footer-hiphop,
+.footer-jpop,
+.footer-vocaloid {
+    width : 33.33333% ;
+    width : -webkit-calc(100% / 3) ;
+    width : calc(100% / 3) ;
+    padding-left: 3rem;
+    border-left: 2px solid;
+}
+
+.footer-hiphop {
+    border: none;
+}
+
+.btn-footer {
+    color: #545F6E;
+}
+
+.footer-name {
+    font-size: 3rem;
+}
+
+.footer-icon-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.footer-icon-list::before,
+.footer-icon-list::after {
+    content: "";
+    border-top: 2px solid #545F6E;
+    flex-grow: 1;
+}
+
+.footer-icon-list li {
+    margin: 0 2rem;
+}
+
+.icon {
+    width: 100%;
+}
+
+.fab {
+    color: #545F6E;
+    flex: auto;
+    font-size: 4rem;
+}
+
+.btn-footer:hover,
+.fab:hover {
+    color: #262C3A;
+}
